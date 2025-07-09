@@ -12,12 +12,14 @@
      - **Build Command**: `npm install && npm run build`
      - **Start Command**: `node cloud-server-simple.js`
 
-3. **Set Environment Variables**:
-   ```
-   OPENAI_API_KEY=your-api-key-here
-   OPENAI_BASE_URL=https://api.deepseek.com  # or your preferred provider
-   OPENAI_MODEL=deepseek-chat               # or your preferred model
-   ```
+3. **Set Environment Variables** (in Render dashboard):
+   - Go to your service → Environment
+   - Add these variables:
+     ```
+     OPENAI_API_KEY=your-api-key-here
+     OPENAI_BASE_URL=https://api.deepseek.com
+     OPENAI_MODEL=deepseek-chat
+     ```
 
 4. **Deploy** and get your URL: `https://your-app.onrender.com`
 
