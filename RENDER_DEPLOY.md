@@ -16,7 +16,7 @@
    - Go to your service → Environment
    - Add these variables:
      ```
-     OPENAI_API_KEY=your-api-key-here
+     OPENAI_API_KEY=your-actual-api-key-here
      OPENAI_BASE_URL=https://api.deepseek.com
      OPENAI_MODEL=deepseek-chat
      ```
@@ -26,9 +26,18 @@
 5. **Use with Claude Code**:
    ```bash
    export ANTHROPIC_BASE_URL=https://your-app.onrender.com
-   export ANTHROPIC_API_KEY=any-string
+   export ANTHROPIC_API_KEY=any-string  # Can be any value
    claude-code
    ```
+
+## Security Note
+
+⚠️ **Important**: This basic deployment does not include API key authentication between Claude Code and your Render service. Anyone with your Render URL can use your deployed service. For production use, consider:
+
+1. Adding authentication middleware
+2. Using environment-based access control
+3. Implementing rate limiting
+4. Monitoring usage
 
 ## Provider Examples
 

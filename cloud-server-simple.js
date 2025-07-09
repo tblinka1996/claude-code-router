@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // Simple cloud deployment entry point for claude-code-router
-// This bypasses the CLI and directly starts the server
+// This bypasses the CLI and directly starts the server with API key validation
 
 const { existsSync, mkdirSync, writeFileSync } = require('fs');
 const { join } = require('path');
